@@ -443,9 +443,23 @@
           </ul>
         </div>
         <div class="subscript">
-          <form name="subacript_form" autocomplete="on">
+          <form name="subacript_form" autocomplete="on" class="subacript-form">
             <label for="subscript_mail">подпишитесь на рассылку</label>
-            <input type="mail" name="subscript_mail" />
+            <div class="suscript-row">
+              <input
+                type="mail"
+                name="subscript_mail"
+                id="subscript_mail"
+                class="subscript-mail"
+                placeholder="Email"
+              />
+              <button type="submit" class="subscript-button">
+                Подписаться
+                <svg class="icon icon-send" width="24px" height="24px">
+                  <use href="./images/sprites.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
           </form>
         </div>
       </div>
@@ -457,6 +471,64 @@
             <use href="./images/sprites.svg#icon-close"></use>
           </svg>
         </button>
+        <h2 class="modal-header">Оставьте свои данные, мы вам перезвоним</h2>
+        <form name="order_form" autocomplete="on" class="order-form">
+          <div class="order-form-field">
+            <label for="order_name" class="order-form-label">Имя</label>
+            <div class="order-form-icon">
+              <input type="text" name="order_name" id="order_name" class="order-form-input" />
+              <svg class="icon input-icon" width="18px" height="18px">
+                <use href="./images/sprites.svg#icon-person-form"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="order-form-field">
+            <label for="order_tell" class="order-form-label">Телефон</label>
+            <div class="order-form-icon">
+              <input type="tell" name="order_tell" id="order_tell" class="order-form-input" />
+              <svg class="icon input-icon" width="18px" height="18px">
+                <use href="./images/sprites.svg#icon-phone-form"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="order-form-field">
+            <label for="order_mail" class="order-form-label">Почта</label>
+            <div class="order-form-icon">
+              <input type="mail" name="order_mail" id="order_mail" class="order-form-input" />
+              <svg class="icon input-icon" width="18px" height="18px">
+                <use href="./images/sprites.svg#icon-email-form"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="order-form-field">
+            <label for="order_comment" class="order-form-label">Комментарий</label>
+            <textarea
+              name="order_comment"
+              id="order_comment"
+              placeholder="Введите текст"
+              class="order-form-comment"
+            ></textarea>
+          </div>
+          <div class="order-form-checkbox">
+            <input
+              type="checkbox"
+              name="order_policy"
+              id="order_policy"
+              class="order-form-checkbox-input visually-hidden"
+            />
+            <label for="order_policy" class="order-policy">
+              <span>
+                <svg class="icon icon-check" width="11px" height="8px">
+                  <use href="./images/sprites.svg#icon-check"></use>
+                </svg> </span
+              >Соглашаюсь с рассылкой и принимаю
+              <a href="#" class="order-policy-link">Условия договора</a></label
+            >
+          </div>
+          <div class="order-form-buttom">
+            <button type="submit" class="order-buttom">Отправить</button>
+          </div>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
