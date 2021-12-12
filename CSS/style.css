@@ -378,9 +378,9 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition-property: border;
-  transition-duration: var(--animation-duration);
-  transition-timing-function: var(--animation-timing);
+  transition-property: border, background-color;
+  transition-duration: var(--animation-duration), var(--animation-duration);
+  transition-timing-function: var(--animation-timing), var(--animation-timing);
 }
 .order-policy span:hover,
 .order-form-checkbox-input:focus + .order-policy span {
@@ -388,6 +388,9 @@ body {
 }
 .icon-check {
   fill: transparent;
+  transition-property: fill;
+  transition-duration: var(--animation-duration);
+  transition-timing-function: var(--animation-timing);
 }
 .order-form-checkbox-input:checked + .order-policy span {
   background-color: var(--modal-focus);
