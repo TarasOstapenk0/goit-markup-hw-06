@@ -378,7 +378,7 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition-property: background-color;
+  transition-property: border;
   transition-duration: var(--animation-duration);
   transition-timing-function: var(--animation-timing);
 }
