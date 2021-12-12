@@ -396,21 +396,6 @@ body {
 .order-form-checkbox-input:checked + .order-policy .icon-check {
   fill: var(--contrast-color);
 }
-/* .order-policy::before {
-  content: '';
-  display: block;
-  width: 16px;
-  height: 15px;
-  border: 1px solid #000000;
-  border-radius: 2px;
-}
-.order-form-checkbox-input:checked + .order-policy::before {
-  background-image: url(../images/check.svg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: none;
-} */
 .order-policy-link {
   color: var(--modal-link);
   text-decoration-skip-ink: none;
